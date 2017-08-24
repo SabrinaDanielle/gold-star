@@ -1,0 +1,190 @@
+/* CSS RESET */
+/* CSS RESET */
+*, h1, h2, h3, h4, h5, h6, p, ul, ol, li, div,
+.container, .row,
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12,
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12,
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12,
+.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+  margin: 0;
+  padding: 0;
+}
+
+.container, .row {
+  width: 100%;
+}
+
+.wrap {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* IMPORT SCSS PARTIALS */
+/* VERTICAL ALIGNMENT */
+.outer {
+  display: table;
+  width: 100%;
+  height: auto;
+}
+
+.outer .inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* BOOTSTRAP GRID SYSTEM EXAMPLE */
+#grid-example .row {
+  margin-bottom: 50px;
+}
+
+#grid-example .row:last-of-type {
+  margin-bottom: 0;
+}
+
+#grid-example .row:nth-of-type(1) {
+  padding: 30px 20px;
+  background-color: #333;
+  color: white;
+}
+
+#grid-example .row:nth-of-type(1) .col-xs-6 .outer {
+  height: 50px;
+}
+
+#grid-example .row:nth-of-type(1) .col-xs-6:first-of-type h1 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+#grid-example .row:nth-of-type(1) .col-xs-6:last-of-type {
+  text-align: right;
+}
+
+#grid-example .row:nth-of-type(2) {
+  margin-bottom: 100px;
+}
+
+#grid-example .row:nth-of-type(2) .col-xs-2 {
+  width: 200px;
+  min-height: 450px;
+  padding: 20px 10px;
+  background-color: #555;
+}
+
+#grid-example .row:nth-of-type(2) .col-xs-8 {
+  width: calc(100% - 400px);
+  padding: 0 20px;
+}
+
+#grid-example .row:nth-of-type(2) .col-xs-8 .content {
+  min-height: 450px;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+#grid-example .row:nth-of-type(2) .col-xs-8 .content p {
+  line-height: 1.8em;
+}
+
+#grid-example .row:nth-of-type(3) {
+  position: fixed;
+  z-index: 1000;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  box-shadow: 0px 0px 5px darkgray;
+  text-align: center;
+  background-color: white;
+}
+
+#grid-example .row:nth-of-type(3) .col-xs-6 .outer {
+  height: 50px;
+}
+
+#grid-example .row:nth-of-type(3) .col-xs-6:first-of-type p {
+  font-size: 12px;
+  color: darkgray;
+}
+
+/* KEYFRAME ANIMATIONS */
+#keyframes-example ul {
+  position: relative;
+  margin-top: 50px;
+  padding: 20px;
+  overflow: hidden;
+  box-shadow: 0px 5px 10px -5px black;
+  background-color: #444;
+  border-radius: 4px;
+}
+
+#keyframes-example .animated {
+  position: relative;
+  margin-bottom: 5px;
+  padding: 15px 20px;
+  list-style-type: none;
+  box-shadow: 0px 5px 10px -5px black;
+  background-color: #222;
+  color: white;
+  border-radius: 4px;
+  transition: all 0.25s ease-in-out;
+}
+
+#keyframes-example .animated:last-child {
+  margin-bottom: 0;
+}
+
+#keyframes-example .animated:hover {
+  background-color: #111;
+}
+
+#keyframes-example .animated:nth-child(1) {
+  animation: slideRight 0.5s 1;
+}
+
+#keyframes-example .animated:nth-child(2) {
+  animation: slideRight 1s 1;
+}
+
+#keyframes-example .animated:nth-child(3) {
+  animation: slideRight 1.5s 1;
+}
+
+#keyframes-example .animated:nth-child(4) {
+  animation: slideRight 2s 1;
+}
+
+#keyframes-example .animated:nth-child(5) {
+  animation: slideRight 2.5s 1;
+}
+
+#keyframes-example .animated:nth-child(6) {
+  animation: slideRight 3s 1;
+}
+
+#keyframes-example .animated:nth-child(7) {
+  animation: slideRight 3.5s 1;
+}
+
+#keyframes-example .animated:nth-child(8) {
+  animation: slideRight 4s 1;
+}
+
+#keyframes-example .animated:nth-child(9) {
+  animation: slideRight 4.5s 1;
+}
+
+#keyframes-example .animated:nth-child(10) {
+  animation: slideRight 5s 1;
+}
+
+@keyframes slideRight {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}

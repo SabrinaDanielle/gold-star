@@ -1,0 +1,21 @@
+{
+  "name": "gold-star-sessions",
+  "description": "codercamps frontend project that I am going to multipurpose for my bestfriends tutoring buisness",
+  "main": "index.html",
+  "authors": [
+    "Sabrina Danielle Green <bri.daniG@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/sabrinadanielle/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "^0.100.1"
+  }
+}

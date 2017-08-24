@@ -1,0 +1,49 @@
+/* KEYFRAME ANIMATIONS */
+
+#keyframes-example {
+  ul {
+    position: relative;
+    margin-top: 50px;
+    padding: 20px;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px -5px black;
+    background-color: #444;
+    border-radius: 4px;
+  }
+
+  .animated {
+    position: relative;
+    margin-bottom: 5px;
+    padding: 15px 20px;
+    list-style-type: none;
+    box-shadow: 0px 5px 10px -5px black;
+    background-color: #222;
+    color: white;
+    border-radius: 4px;
+    transition: all 0.25s ease-in-out;
+  }
+
+  .animated:last-child {
+    margin-bottom: 0;
+  }
+
+  .animated:hover {
+    background-color: #111;
+  }
+
+  @for $i from 1 through 10 {
+    .animated:nth-child(#{$i}) {
+      animation: slideRight #{$i - ($i / 2)}s 1;
+    }
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 0;
+  }
+}
